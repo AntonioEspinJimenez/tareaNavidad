@@ -10,26 +10,68 @@
     border: 3px solid black;
 }
 .banner {
-    position: relative;
-    overflow: hidden;
-    border-radius: 20px;
-    transition: transform 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  transition: transform 0.3s ease-in-out;
+  text-align: center;
+}
+
+.banner:hover {
+  transform: scale(1.1);
+}
+
+.banner img {
+  width: 100%;
+  height: 200px;
+  max-width: 100%;
+  border-radius: 20px;
+}
+
+.banner h1 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  color: white;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+footer {
+    width: 100%;
+}
+
+.principio-footer{
+    width: 100%;
+    margin-top: -3vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+  }
+  .principio-footer ul{
+    flex: 20%;
+  }
+  .principio-footer li {
+    display: inline;
+    margin-left: 1vw;
+    margin-right: 1vw;
+  }
+  .principio-footer hr {
+    flex: 40%;
+    margin: 0 2vw 0 2vw;
+    height: 2px;
+    color: white;
+    background-color: white;
+  }
+  .final-footer {
+    width: 100%;
     text-align: center;
   }
-
-  .banner:hover {
-    transform: scale(1.1);
-  }
-
-  .banner img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-  .banner h1 {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    color: white;
-    margin: 0;
+  .final-footer * {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-bottom: 1vh;
   }
