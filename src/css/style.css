@@ -1,5 +1,10 @@
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 @import "../../node_modules/@fortawesome/fontawesome-free/css/all.css";
-.verde {
-    color: green;
+.bg-image {
+    background-image: url('../assets/img/bandera.png');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
 }
