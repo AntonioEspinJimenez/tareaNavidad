@@ -1,5 +1,9 @@
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 @import "../../node_modules/@fortawesome/fontawesome-free/css/all.css";
+body{
+    min-height: 100vh;
+    margin: 0;
+}
 .bg-image {
     background-image: url('../assets/img/bandera.png');
     background-size: contain;
@@ -14,7 +18,6 @@
   overflow: hidden;
   border-radius: 20px;
   transition: transform 0.3s ease-in-out;
-  text-align: center;
 }
 
 .banner:hover {
@@ -39,39 +42,24 @@
   padding: 0;
   z-index: 1;
 }
-footer {
-    width: 100%;
+.principio-footer hr{
+  width: 40vw;
+  color: white;
+  background-color: white;
 }
-
-.principio-footer{
-    width: 100%;
-    margin-top: -3vh;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-items: center;
-  }
-  .principio-footer ul{
-    flex: 20%;
-  }
-  .principio-footer li {
-    display: inline;
-    margin-left: 1vw;
-    margin-right: 1vw;
-  }
-  .principio-footer hr {
-    flex: 40%;
-    margin: 0 2vw 0 2vw;
-    height: 2px;
-    color: white;
-    background-color: white;
-  }
-  .final-footer {
-    width: 100%;
-    text-align: center;
-  }
-  .final-footer * {
-    margin-bottom: 0px;
-    margin-top: 0px;
-    padding-bottom: 1vh;
-  }
+.descripcion a{
+  text-decoration: none;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+.descripcion{
+  width: 80%;
+  margin: 0 auto;
+}
+.descripcion h1,h2{
+  width: 100%;
+  text-align:center;
+}
